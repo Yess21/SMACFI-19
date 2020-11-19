@@ -3,6 +3,10 @@
     package="com.example.home">
 
     <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.CAMERA" />
+>>>>>>> main
 
     <application
         android:allowBackup="true"
@@ -12,7 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+<<<<<<< HEAD
         <activity android:name=".GelAntibacterial"></activity>
+=======
+        <activity android:name=".Alumnos"></activity>
+        <activity android:name=".Canalizacion" />
+>>>>>>> main
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +29,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".MainActivity"></activity>
+=======
+        <activity android:name=".MainActivity" />
+>>>>>>> main
     </application>
 
 </manifest>
