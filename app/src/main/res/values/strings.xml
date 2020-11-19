@@ -7,4 +7,6 @@
     <string name="reportes">Reportes</string>
     <string name="canalizar">Canalizar</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="diagnosticos">Diagnosticos</string>
+    <string name="porcentaje">50%</string>
 </resources>

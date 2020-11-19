@@ -2,7 +2,9 @@ package com.example.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView bgapp, hoja;
     LinearLayout linearLayout, linearLayoutHome, linearLayoutMenu;
     Animation animfront;
+    ImageView img1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
         linearLayoutHome = (LinearLayout) findViewById(R.id.linearLayoutHome);
         linearLayoutMenu = (LinearLayout) findViewById(R.id.linearLayoutMenu);
+        img1 = (ImageView) findViewById(R.id.imgGel);
 
         bgapp.animate().translationY(-1500).setDuration(1000).setStartDelay(400);
         hoja.animate().alpha(0).setDuration(1000).setStartDelay(400);
@@ -33,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
         linearLayoutHome.startAnimation(animfront);
         linearLayoutMenu.startAnimation(animfront);
+
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GelAntibacterial.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
     }
 }
