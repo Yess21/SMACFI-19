@@ -2,7 +2,9 @@ package com.example.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -10,7 +12,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView bgapp, hoja;
+    ImageView bgapp, hoja, ImgReportes;
     LinearLayout linearLayout, linearLayoutHome, linearLayoutMenu;
     Animation animfront;
 
@@ -33,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
         linearLayoutHome.startAnimation(animfront);
         linearLayoutMenu.startAnimation(animfront);
+
+        ImgReportes = (ImageView) findViewById(R.id.ImgReportes);
+        ImgReportes.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent IntRepor = new Intent(MainActivity.this,Freporte.class);
+                startActivity(IntRepor);
+            }
+        });
 
     }
 }

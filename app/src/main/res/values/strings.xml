@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Home</string>
+    <string name="app_name">SMACFI-19</string>
     <string name="bienvenido">Bienvenido a Smart-sink</string>
     <string name="inicio">SMART-SINK</string>
     <string name="gel">Gel antibacterial</string>
@@ -7,4 +7,31 @@
     <string name="reportes">Reportes</string>
     <string name="canalizar">Canalizar</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="title_activity_freporte">Freporte</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--Strings de interfaz de reportes-->
+    <string name="tit">Reportes</string>
+    <string name="cod">Código de barras de la persona</string>
+    <string name="Ndoctor">Nombre del doctor</string>
+    <string name="temp">Temperatura</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="sint">Síntomas</string>
+    <string name="obs">Observaciones</string>
+    <string name="guardarR">Guardar</string>
+
+    <!--Strings de la interfaz de historial de reportes-->
+    <string name="titu">Historial de reportes</string>
+    <string name="Create">Agregar</string>
+    <string name="Update">Actualizar</string>
+    <string name="Delete">Eliminar</string>
+
 </resources>

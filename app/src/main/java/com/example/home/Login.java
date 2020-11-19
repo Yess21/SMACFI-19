@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
                 usuario = txtUsuario.getText().toString();
                 contrasena = txtContrasena.getText().toString();
                 if (!usuario.isEmpty() && !contrasena.isEmpty()) { //Si no esta vacio
-                    validarUsuario("http://192.168.100.9/api_usuarios/Usuario.php");
+                    validarUsuario("http://192.168.1.70/api_usuarios/Usuario.php");
                 } else {
                     Toast.makeText(Login.this, "Faltan datos", Toast.LENGTH_LONG).show();
                 }
