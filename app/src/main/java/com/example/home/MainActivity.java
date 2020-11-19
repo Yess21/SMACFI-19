@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView bgapp, hoja, ImgReportes;
     LinearLayout linearLayout, linearLayoutHome, linearLayoutMenu;
     Animation animfront;
+    ImageView img1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
         linearLayoutHome = (LinearLayout) findViewById(R.id.linearLayoutHome);
         linearLayoutMenu = (LinearLayout) findViewById(R.id.linearLayoutMenu);
+        img1 = (ImageView) findViewById(R.id.imgGel);
 
         bgapp.animate().translationY(-1500).setDuration(1000).setStartDelay(400);
         hoja.animate().alpha(0).setDuration(1000).setStartDelay(400);
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayoutHome.startAnimation(animfront);
         linearLayoutMenu.startAnimation(animfront);
 
+<<<<<<< HEAD
         ImgReportes = (ImageView) findViewById(R.id.ImgReportes);
         ImgReportes.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -45,5 +48,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+=======
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GelAntibacterial.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+>>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
     }
 }
