@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="bienvenido">Bienvenido a Smart-sink</string>
+    <string name="inicio">SMART-SINK</string>
+    <string name="gel">Gel antibacterial</string>
+    <string name="alumnos">Alumnos</string>
+    <string name="reportes">Reportes</string>
+    <string name="canalizar">Canalizar</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+</resources>
