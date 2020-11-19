@@ -7,7 +7,6 @@
     <string name="reportes">Reportes</string>
     <string name="canalizar">Canalizar</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
-<<<<<<< HEAD
     <string name="title_activity_freporte">Freporte</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -35,7 +34,6 @@
     <string name="Update">Actualizar</string>
     <string name="Delete">Eliminar</string>
 
-=======
     <string name="diagnosticos">Diagnosticos</string>
     <string name="porcentaje">50%</string>
     <string name="codigoDeBarras">Código de barras</string>
@@ -52,8 +50,5 @@
     <string name="temperatura">Temperatura</string>
     <string name="simtomas">Síntomas</string>
     <string name="fecha">Fecha</string>
-    <string name="altura">Altura</string>
-    <string name="peso">Peso</string>
     <string name="buscar">Buscar</string>
->>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
 </resources>

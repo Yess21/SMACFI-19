@@ -3,10 +3,7 @@
     package="com.example.home">
 
     <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
-=======
     <uses-permission android:name="android.permission.CAMERA" />
->>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
 
     <application
         android:allowBackup="true"
@@ -16,14 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-<<<<<<< HEAD
-        <activity android:name=".historial"></activity>
+        <activity android:name=".historial" />
         <activity android:name=".Freporte" />
-=======
-        <activity android:name=".GelAntibacterial"></activity>
-        <activity android:name=".Alumnos"></activity>
+        <activity android:name=".GelAntibacterial" />
+        <activity android:name=".Alumnos" />
         <activity android:name=".Canalizacion" />
->>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,13 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-<<<<<<< HEAD
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-=======
->>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
     </application>
-
 </manifest>

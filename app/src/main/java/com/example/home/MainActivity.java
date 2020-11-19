@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         linearLayoutHome.startAnimation(animfront);
         linearLayoutMenu.startAnimation(animfront);
 
-<<<<<<< HEAD
         ImgReportes = (ImageView) findViewById(R.id.ImgReportes);
         ImgReportes.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -48,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-=======
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,10 +54,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
->>>>>>> dd398ec70c1bb9edcf9041f44cb242fddb2a16f5
     }
 }
