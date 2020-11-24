@@ -5,69 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".historial">
+    tools:context=".Diagnostcos">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="20dp">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/anton"
-                android:textColor="#fff"
                 android:text="@string/titu"
-                android:textSize="36sp"
-                android:textStyle="bold" />
+                android:textAlignment="center"
+                android:fontFamily="@font/blenda_script"
+                android:textColor="#4168C6"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
 
         </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/lblbusqueda"
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:background="#BFFFFFFF"
-                android:text="" />
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:background="#BEFFFFFF"
+                android:backgroundTint="#BEFFFFFF"
+                android:text="@string/codigoDeBarras" />
 
-            <SearchView
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"/>
-
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/btnEscaner"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:drawableStart="@android:drawable/ic_menu_camera" />
         </LinearLayout>
-    </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,8 +78,11 @@
 
                 <Button
                     android:id="@+id/btnagregar"
-                    android:layout_width="100dp"
+                    android:layout_width="90dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
                     android:background="@drawable/botonsesion"
                     android:text="@string/Create"
                     android:textColor="#FFFFFF"
@@ -87,7 +92,9 @@
                     android:id="@+id/btnactualizar"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
                     android:background="@drawable/botonsesion"
                     android:text="@string/Update"
                     android:textColor="#FFFFFF"
@@ -95,35 +102,35 @@
 
                 <Button
                     android:id="@+id/btneliminar"
-                    android:layout_width="110dp"
+                    android:layout_width="90dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
                     android:background="@drawable/botonsesion"
                     android:text="@string/Delete"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
             </LinearLayout>
+
         </LinearLayout>
 
         <TableLayout
-            android:layout_width="327dp"
+            android:layout_width="368dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/cod"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -131,12 +138,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/Ndoctor"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -144,12 +149,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/temp"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -157,12 +160,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/peso"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -170,12 +171,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/altura"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -183,12 +182,10 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/sint"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -196,17 +193,12 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:padding="3dip"
                     android:text="@string/obs"
                     android:textSize="15dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </TableRow>
-
         </TableLayout>
-
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

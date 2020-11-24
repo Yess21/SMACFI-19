@@ -29,12 +29,12 @@
     <string name="guardarR">Guardar</string>
 
     <!--Strings de la interfaz de historial de reportes-->
-    <string name="titu">Historial de reportes</string>
+    <string name="titu">Diagnósticos</string>
     <string name="Create">Agregar</string>
     <string name="Update">Actualizar</string>
     <string name="Delete">Eliminar</string>
 
-    <string name="diagnosticos">Diagnosticos</string>
+    <string name="diagnosticos">Diagnósticos</string>
     <string name="porcentaje">50%</string>
     <string name="codigoDeBarras">Código de barras</string>
     <string name="aceptar">Aceptar</string>
@@ -51,4 +51,6 @@
     <string name="simtomas">Síntomas</string>
     <string name="fecha">Fecha</string>
     <string name="buscar">Buscar</string>
+    <string name="alu">Alumonos</string>
+    <string name="canal">Canalizar</string>
 </resources>

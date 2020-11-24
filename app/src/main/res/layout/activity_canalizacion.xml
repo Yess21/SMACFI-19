@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Canalizacion">
 
     <LinearLayout
@@ -19,6 +20,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/canal"
+                android:textAlignment="center"
+                android:fontFamily="@font/blenda_script"
+                android:textColor="#4168C6"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +54,12 @@
                 android:hint="@string/codigoDeBarras"
                 android:inputType="number"
                 android:nestedScrollingEnabled="true"
-                android:text="" />
+                android:text=""
+                android:gravity="start|top"
+                android:layout_marginStart="30dp"
+                android:background="#BEFFFFFF"
+                android:backgroundTint="#BEFFFFFF" />
+
 
             <Button
                 android:id="@+id/btnEscaner"
@@ -47,9 +73,13 @@
             android:id="@+id/btnAceptar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp"
-            android:text="@string/aceptar" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/botonsesion"
+            android:text="@string/aceptar"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

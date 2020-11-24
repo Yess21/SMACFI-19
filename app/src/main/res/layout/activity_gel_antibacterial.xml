@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GelAntibacterial"
-    android:background="@drawable/fondorosa">
+    android:background="@drawable/fondo">
 
     <TextView
         android:id="@+id/lblTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:text="@string/gel"
         android:textAlignment="center"
         android:fontFamily="@font/blenda_script"
-        android:textColor="@color/colorRosa"
+        android:textColor="#4168C6"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"

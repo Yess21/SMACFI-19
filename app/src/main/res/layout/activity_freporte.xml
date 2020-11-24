@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -24,12 +26,41 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/aladin"
                 android:text="@string/tit"
-                android:textColor="#fff"
-                android:textSize="36sp"
-                android:textStyle="bold" />
+                android:textAlignment="center"
+                android:fontFamily="@font/blenda_script"
+                android:textColor="#4168C6"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Llcodb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/cod" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:background="#BEFFFFFF"
+                android:backgroundTint="#BEFFFFFF"
+                android:text="@string/codigoDeBarras" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,64 +78,23 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
-                    android:src="@drawable/cod" />
-
-                <TextView
-                    android:layout_width="250dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/cod"
-                    android:textSize="15dp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/codB"
-            android:layout_width="250dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="5dp"
-            android:backgroundTint="#071875"
-            android:ems="10"
-            android:inputType="number" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="25dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/doctor" />
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="20dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/Ndoctor"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
             </LinearLayout>
-
         </LinearLayout>
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="250dp"
             android:layout_height="20dp"
-            android:layout_marginStart="45dp"
+            android:layout_marginStart="75dp"
             android:layout_marginTop="5dp"
             android:ems="10" />
 
@@ -123,13 +113,12 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/temp" />
 
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="25dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/temp"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
@@ -165,13 +154,12 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/peso" />
 
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="25dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/peso"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
@@ -182,12 +170,12 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="30dp"
-                        android:ems="10"
-                        android:maxLength="8"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
                         android:backgroundTint="#071875"
-                        android:inputType="numberDecimal" />
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -208,13 +196,12 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/altura" />
 
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="25dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/altura"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
@@ -250,13 +237,12 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/sint" />
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="20dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/sint"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
@@ -266,7 +252,7 @@
         <EditText
             android:id="@+id/txtsintomas"
             android:layout_width="300dp"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
@@ -290,13 +276,12 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="25dp"
-                    android:layout_marginBottom="40dp"
                     android:src="@drawable/obs" />
 
                 <TextView
                     android:layout_width="250dp"
                     android:layout_height="20dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="25dp"
                     android:text="@string/obs"
                     android:textSize="15dp"
                     android:textStyle="bold"/>
@@ -306,7 +291,7 @@
         <EditText
             android:id="@+id/txtobservaciones"
             android:layout_width="300dp"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
