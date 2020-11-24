@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class Diagnostcos extends AppCompatActivity {
+public class Diagnosticos extends AppCompatActivity {
 
     Button btnagregar,btnactualizar,btneliminar;
 
