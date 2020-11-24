@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         ImgDiag.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent IntDiag = new Intent(MainActivity.this,historial.class);
+                Intent IntDiag = new Intent(MainActivity.this, Diagnosticos.class);
                 startActivity(IntDiag);
             }
         });

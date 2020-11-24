@@ -92,6 +92,14 @@
                     android:text="@string/matricula"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/matricula"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -101,6 +109,13 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/nombre"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>
@@ -114,6 +129,14 @@
                     android:text="@string/grupo"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/grupo"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -123,6 +146,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/carrera"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/carrera"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>
@@ -136,6 +167,14 @@
                     android:text="@string/area"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -145,6 +184,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/temperatura"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/temperatura"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>
@@ -158,6 +205,14 @@
                     android:text="@string/simtomas"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sintomas"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -167,6 +222,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/altura"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/altura"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>
@@ -180,6 +243,14 @@
                     android:text="@string/peso"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/peso"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -189,6 +260,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/diagnostico"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/diagnostico"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>
@@ -202,6 +281,14 @@
                     android:text="@string/observacion"
                     android:textSize="15dp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/observaciones"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -211,6 +298,14 @@
                 <TextView
                     android:padding="3dip"
                     android:text="@string/fecha"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:padding="3dip"
+                    android:text=""
                     android:textSize="15dp"
                     android:textStyle="bold" />
             </TableRow>

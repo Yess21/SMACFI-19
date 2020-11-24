@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SMACFI-19</string>
-    <string name="bienvenido">Bienvenido a Smart-sink</string>
-    <string name="inicio">SMART-SINK</string>
+    <string name="bienvenido">Bienvenido a SMACFI-19</string>
+    <string name="inicio">SMACFI-19</string>
     <string name="gel">Gel antibacterial</string>
     <string name="alumnos">Alumnos</string>
     <string name="reportes">Reportes</string>
@@ -51,6 +51,6 @@
     <string name="simtomas">Síntomas</string>
     <string name="fecha">Fecha</string>
     <string name="buscar">Buscar</string>
-    <string name="alu">Alumonos</string>
+    <string name="alu">Alumnos</string>
     <string name="canal">Canalizar</string>
 </resources>
