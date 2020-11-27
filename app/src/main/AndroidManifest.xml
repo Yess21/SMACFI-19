@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,20 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Diagnosticos"></activity>
-        <activity android:name=".historial" />
-        <activity android:name=".Freporte" />
-        <activity android:name=".GelAntibacterial" />
-        <activity android:name=".Alumnos" />
-        <activity android:name=".Canalizacion" />
-        <activity android:name=".Login">
+        <activity android:name=".controllers.Alumnos" />
+        <activity android:name=".controllers.Canalizacion" />
+        <activity android:name=".controllers.Diagnosticos" />
+        <activity android:name=".controllers.Freporte" />
+        <activity android:name=".controllers.GelAntibacterial" />
+        <activity android:name=".controllers.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".controllers.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
