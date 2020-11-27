@@ -1,9 +1,10 @@
-package com.example.home;
+package com.example.home.controllers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.ImageView;
+
+import com.example.home.R;
 
 public class Freporte extends AppCompatActivity {
 

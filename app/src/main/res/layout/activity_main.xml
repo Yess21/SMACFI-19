@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".controllers.MainActivity"
     android:background="#fff">
 
     <ImageView
@@ -12,15 +12,14 @@
         android:elevation="6dp"
         android:src="@drawable/hoja"
         android:layout_marginEnd="230dp"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginStart="8dp"
@@ -33,18 +32,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bienvenido"
             android:textStyle="bold"
             android:textSize="30dp"
+            android:textAlignment="center"
             android:textColor="#fff"/>
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayoutHome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:elevation="6dp"
@@ -55,15 +54,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inicio"
             android:layout_marginTop="25dp"
             android:textColor="#fff"
             android:textSize="30dp"
+            android:textAlignment="center"
             android:textStyle="bold" />
     </LinearLayout>
-
 
     <ImageView
         android:translationY="0dp"
@@ -74,74 +73,70 @@
         android:src="@drawable/fondo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayoutMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
         android:elevation="6dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/ImgGel"
-                    android:src="@drawable/gel"
-                    android:layout_width="145dp"
-                    android:layout_height="145dp"/>
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/gel" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/gel"
                     android:fontFamily="@font/blenda_script"
-                    android:textColor="#1B8E69"
+                    android:text="@string/gel"
                     android:textAlignment="center"
+                    android:textColor="#1B8E69"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginStart="25dp"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
                 android:orientation="vertical">
 
                 <ImageView
-
                     android:id="@+id/ImgAlum"
-                    android:layout_width="145dp"
-                    android:layout_height="145dp"
+                    android:layout_width="151dp"
+                    android:layout_height="150dp"
                     android:src="@drawable/alumno" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:text="@string/alumnos"
                     android:fontFamily="@font/blenda_script"
+                    android:text="@string/alumnos"
+                    android:textAlignment="center"
                     android:textColor="#1B8E69"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -150,30 +145,30 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/ImgReportes"
-                    android:src="@drawable/reportes"
-                    android:layout_width="145dp"
-                    android:layout_height="150dp"/>
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/reportes" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:text="@string/reportes"
                     android:fontFamily="@font/blenda_script"
+                    android:text="@string/reportes"
+                    android:textAlignment="center"
                     android:textColor="#1B8E69"
                     android:textSize="15dp"
                     android:textStyle="bold" />
@@ -181,25 +176,25 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginStart="25dp"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/ImgCanal"
-                    android:src="@drawable/canalizar"
-                    android:layout_width="145dp"
-                    android:layout_height="145dp"/>
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/canalizar" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/canalizar"
                     android:fontFamily="@font/blenda_script"
-                    android:textColor="#1B8E69"
+                    android:text="@string/canalizar"
                     android:textAlignment="center"
+                    android:textColor="#1B8E69"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -212,25 +207,24 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="153dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginLeft="110dp"
-                android:layout_marginRight="90dp"
+                android:gravity="center|top"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/ImgDiag"
-                    android:layout_width="145dp"
-                    android:layout_height="145dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     android:src="@drawable/diagnosticos" />
 
                 <TextView
-                    android:layout_width="117dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/blenda_script"
                     android:text="@string/diagnosticos"
+                    android:textAlignment="center"
                     android:textColor="#1B8E69"
                     android:textSize="15dp"
                     android:textStyle="bold" />

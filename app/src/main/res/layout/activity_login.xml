@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".controllers.Login"
     android:background="@drawable/fondo">
 
     <FrameLayout
@@ -24,10 +24,19 @@
                 android:src="@drawable/logo2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginBottom="40dp"></ImageView>
+                android:layout_marginBottom="40dp" />
+
+            <ProgressBar
+                android:id="@+id/pgbBarraCarga"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="true"
+                android:indeterminateTint="#1976D2"
+                android:visibility="gone" />
 
             <EditText
-                android:id="@+id/txtUsuario"
+                android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -41,7 +50,7 @@
                 android:paddingLeft="5dp" />
 
             <EditText
-                android:id="@+id/txtContrasena"
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -70,7 +79,4 @@
         </LinearLayout>
 
     </FrameLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
