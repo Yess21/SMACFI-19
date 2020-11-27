@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,13 +48,13 @@
 
             <AutoCompleteTextView
                 android:id="@+id/autoCompleteTextView"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="35dp"
                 android:background="#BEFFFFFF"
                 android:backgroundTint="#BEFFFFFF"
-                android:text="@string/codigoDeBarras" />
+                android:hint="@string/codigoDeBarras" />
 
             <Button
                 android:id="@+id/btnEscaner"

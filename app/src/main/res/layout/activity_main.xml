@@ -82,9 +82,9 @@
         android:id="@+id/linearLayoutMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,11 +94,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="40dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,8 +107,8 @@
                 <ImageView
                     android:id="@+id/ImgGel"
                     android:src="@drawable/gel"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"/>
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -123,16 +123,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginRight="30dp"
+                android:layout_marginStart="25dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageView
+
                     android:id="@+id/ImgAlum"
-                    android:layout_width="151dp"
-                    android:layout_height="150dp"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
                     android:src="@drawable/alumno" />
 
                 <TextView
@@ -151,11 +152,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="40dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -164,7 +165,7 @@
                 <ImageView
                     android:id="@+id/ImgReportes"
                     android:src="@drawable/reportes"
-                    android:layout_width="150dp"
+                    android:layout_width="145dp"
                     android:layout_height="150dp"/>
 
                 <TextView
@@ -180,7 +181,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginRight="30dp"
+                android:layout_marginStart="25dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -189,8 +190,8 @@
                 <ImageView
                     android:id="@+id/ImgCanal"
                     android:src="@drawable/canalizar"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"/>
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -211,18 +212,18 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_marginLeft="130dp"
-                android:layout_marginRight="40dp"
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
+                android:layout_width="153dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="90dp"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/ImgDiag"
-                    android:src="@drawable/diagnosticos"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"/>
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/diagnosticos" />
 
                 <TextView
                     android:layout_width="117dp"
