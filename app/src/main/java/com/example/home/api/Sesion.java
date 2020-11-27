@@ -41,10 +41,6 @@ public class Sesion {
         return isLogged;
     }
 
-    public SharedPreferences getSharedPreferences() {
-        return mPrefs;
-    }
-
     public void iniciarSesion(Auth auth) {
         if (auth != null) {
             SharedPreferences.Editor editor = mPrefs.edit();
@@ -78,5 +74,9 @@ public class Sesion {
         editor.putString(PREF_USER_ROLE, null);
         editor.putString(PREF_USER_TOKEN, null);
         editor.apply();
+    }
+
+    public SharedPreferences getSharedPreferences() {
+        return mPrefs;
     }
 }
