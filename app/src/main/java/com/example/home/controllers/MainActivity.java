@@ -7,16 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.home.R;
+import com.example.home.api.Sesion;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView bgapp, hoja, ImgReportes, ImgGel, ImgAlum,ImgCanal,ImgDiag;
+    ImageView bgapp, hoja, ImgReportes, ImgGel, ImgAlum,ImgCanal,ImgDiag, ImgUsuario;
     LinearLayout linearLayout, linearLayoutHome, linearLayoutMenu;
     Animation animfront;
+    Button btnCerrarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
         linearLayoutHome = (LinearLayout) findViewById(R.id.linearLayoutHome);
         linearLayoutMenu = (LinearLayout) findViewById(R.id.linearLayoutMenu);
+        btnCerrarSesion = (Button) findViewById(R.id.btnCerrarSesion);
+        btnCerrarSesion.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Sesion.get(MainActivity.this).cerrarSesion();
+                startActivity(new Intent(MainActivity.this, Login.class));
+            }
+        });
+
 
         bgapp.animate().translationY(-1500).setDuration(1000).setStartDelay(400);
         hoja.animate().alpha(0).setDuration(1000).setStartDelay(400);
@@ -74,12 +86,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImgDiag = (ImageView) findViewById(R.id.ImgDiag);
+        ImgDiag = (ImageView) findViewById(R.id.ImgDiagnosticos);
         ImgDiag.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent IntDiag = new Intent(MainActivity.this, Diagnosticos.class);
                 startActivity(IntDiag);
+            }
+        });
+
+        ImgUsuario = (ImageView) findViewById(R.id.ImgUsuario);
+        ImgUsuario.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent IntPerfil = new Intent(MainActivity.this, Perfil.class);
+                startActivity(IntPerfil);
             }
         });
 

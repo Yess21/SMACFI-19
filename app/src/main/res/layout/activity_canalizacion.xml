@@ -42,6 +42,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -49,32 +50,26 @@
             <EditText
                 android:id="@+id/txtCodigo"
                 style="@style/Widget.AppCompat.AutoCompleteTextView"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/codigoDeBarras"
-                android:inputType="number"
-                android:nestedScrollingEnabled="true"
-                android:text=""
-                android:gravity="start|top"
+                android:layout_width="326dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="30dp"
                 android:background="#BEFFFFFF"
-                android:backgroundTint="#BEFFFFFF" />
+                android:backgroundTint="#BEFFFFFF"
+                android:gravity="start|top"
+                android:hint="@string/matricula"
+                android:inputType="number"
+                android:nestedScrollingEnabled="true"
+                android:text="" />
 
-
-            <Button
-                android:id="@+id/btnEscaner"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableStart="@android:drawable/ic_menu_camera" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnAceptar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/botonsesion"
             android:text="@string/aceptar"

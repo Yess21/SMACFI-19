@@ -40,6 +40,9 @@ public class Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogin);
         pgbBarraCarga = (ProgressBar) findViewById(R.id.pgbBarraCarga);
 
+        if(Sesion.get(Login.this).isLoggedIn()){
+            main_activity();
+        }
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,8 +124,7 @@ public class Login extends AppCompatActivity {
                     auth = response.body();
                     Sesion.get(Login.this).iniciarSesion(auth);
                     if (Sesion.get(Login.this).isLoggedIn()) {
-                        startActivity(new Intent(Login.this, MainActivity.class));
-                        finish();
+                        main_activity();
                     }
                 }
             }
@@ -134,5 +136,10 @@ public class Login extends AppCompatActivity {
                 activar();
             }
         });
+    }
+
+    private void main_activity() {
+        startActivity(new Intent(Login.this, MainActivity.class));
+        finish();
     }
 }
