@@ -8,17 +8,17 @@ import com.example.home.models.Auth;
 
 public class Sesion {
     private static Sesion INSTANCE;
-    public static final String PREFS_NAME = "SMACFI-19";
-    public static final String PREF_USER_ID = "";
-    public static final String PREF_USER_NAME = "";
-    public static final String PREF_USER_SURNAME_F = "";
-    public static final String PREF_USER_SURNAME_M = "";
-    public static final String PREF_USER_GENDER = "";
-    public static final String PREF_USER_USERNAME = "";
-    public static final String PREF_USER_EMAIL = "";
-    public static final String PREF_USER_PASSWORD = "";
-    public static final String PREF_USER_ROLE = "";
-    public static final String PREF_USER_TOKEN = "";
+    public static final String PREFS_NAME = "SMACFI-LOGIN";
+    public static final String PREF_USER_ID = "PREF_USER_ID";
+    public static final String PREF_USER_NAME = "PREF_USER_NAME";
+    public static final String PREF_USER_SURNAME_F = "PREF_USER_SURNAME_F";
+    public static final String PREF_USER_SURNAME_M = "PREF_USER_SURNAME_M";
+    public static final String PREF_USER_GENDER = "PREF_USER_GENDER";
+    public static final String PREF_USER_USERNAME = "PREF_USER_USERNAME";
+    public static final String PREF_USER_EMAIL = "PREF_USER_EMAIL";
+    public static final String PREF_USER_PASSWORD = "PREF_USER_PASSWORD";
+    public static final String PREF_USER_ROLE = "PREF_USER_ROLE";
+    public static final String PREF_USER_TOKEN = "PREF_USER_TOKEN";
     private final SharedPreferences mPrefs;
     private boolean isLogged = false;
 
@@ -30,7 +30,7 @@ public class Sesion {
         return INSTANCE;
     }
 
-    private Sesion(Context context) {
+    public Sesion(Context context) {
         mPrefs = context.getApplicationContext()
                 .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
 
@@ -39,6 +39,10 @@ public class Sesion {
 
     public boolean isLoggedIn(){
         return isLogged;
+    }
+
+    public SharedPreferences getSharedPreferences() {
+        return mPrefs;
     }
 
     public void iniciarSesion(Auth auth) {

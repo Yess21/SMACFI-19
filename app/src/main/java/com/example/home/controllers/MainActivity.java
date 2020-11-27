@@ -9,8 +9,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.home.R;
+import com.example.home.api.Sesion;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -82,7 +84,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(IntDiag);
             }
         });
-
-
     }
 }

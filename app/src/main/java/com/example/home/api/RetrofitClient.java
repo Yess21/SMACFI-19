@@ -23,7 +23,7 @@ public class RetrofitClient {
         return mInstance;
     }
 
-    public com.example.home.interfaces.Auth getLogin() {
+    public com.example.home.interfaces.Auth getAuth() {
         return retrofit.create(com.example.home.interfaces.Auth.class);
     }
 }
