@@ -14,8 +14,8 @@ public class User {
     private boolean confirmed;
     private boolean blocked;
     private Role role;
-    private int created_by;
-    private int updated_by;
+    private User created_by;
+    private User updated_by;
     private Timestamp created_at;
     private Timestamp updated_at;
     private Persona persona;
@@ -31,8 +31,8 @@ public class User {
         this.confirmed = false;
         this.blocked = false;
         this.role = null;
-        this.created_by = 0;
-        this.updated_by = 0;
+        this.created_by = null;
+        this.updated_by = null;
         this.created_at = null;
         this.updated_at = null;
         this.persona = null;
@@ -118,19 +118,19 @@ public class User {
         this.role = role;
     }
 
-    public int getCreated_by() {
+    public User getCreated_by() {
         return created_by;
     }
 
-    public void setCreated_by(int created_by) {
+    public void setCreated_by(User created_by) {
         this.created_by = created_by;
     }
 
-    public int getUpdated_by() {
+    public User getUpdated_by() {
         return updated_by;
     }
 
-    public void setUpdated_by(int updated_by) {
+    public void setUpdated_by(User updated_by) {
         this.updated_by = updated_by;
     }
 

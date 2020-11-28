@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         ImgAlum.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent IntAlum = new Intent(MainActivity.this,Alumnos.class);
-                startActivity(IntAlum);
+                //Intent IntAlum = new Intent(MainActivity.this,Alumnos.class);
+                //startActivity(IntAlum);
             }
         });
 

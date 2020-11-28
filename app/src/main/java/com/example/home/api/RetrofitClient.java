@@ -26,4 +26,8 @@ public class RetrofitClient {
     public com.example.home.interfaces.Auth getAuth() {
         return retrofit.create(com.example.home.interfaces.Auth.class);
     }
+
+    public com.example.home.interfaces.Diagnosticos getDiagnosticos() {
+        return retrofit.create(com.example.home.interfaces.Diagnosticos.class);
+    }
 }

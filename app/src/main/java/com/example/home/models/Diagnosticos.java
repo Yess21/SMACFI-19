@@ -2,15 +2,14 @@ package com.example.home.models;
 
 import java.sql.Timestamp;
 
-public class Persona {
-
+public class Diagnosticos {
     private int id;
-    private String name;
-    private String father_surname;
-    private String mother_surname;
-    private boolean gender;
-    private String no_imss;
-    private String barcode;
+    private String symptoms;
+    private float temperature;
+    private String diagnostic;
+    private float weight;
+    private float height;
+    private Personas_canalizadas persona_canalizada;
     private boolean status;
     private Timestamp published_at;
     private User created_by;
@@ -18,14 +17,14 @@ public class Persona {
     private Timestamp created_at;
     private Timestamp updated_at;
 
-    public Persona() {
+    public Diagnosticos() {
         this.id = 0;
-        this.name = "";
-        this.father_surname = "";
-        this.mother_surname = "";
-        this.gender = false;
-        this.no_imss = "";
-        this.barcode = "";
+        this.symptoms = "";
+        this.temperature = 0;
+        this.diagnostic = "";
+        this.weight = 0;
+        this.height = 0;
+        this.persona_canalizada = null;
         this.status = false;
         this.published_at = null;
         this.created_by = null;
@@ -42,52 +41,52 @@ public class Persona {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getSymptoms() {
+        return symptoms;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSymptoms(String symptoms) {
+        this.symptoms = symptoms;
     }
 
-    public String getFather_surname() {
-        return father_surname;
+    public float getTemperature() {
+        return temperature;
     }
 
-    public void setFather_surname(String father_surname) {
-        this.father_surname = father_surname;
+    public void setTemperature(float temperature) {
+        this.temperature = temperature;
     }
 
-    public String getMother_surname() {
-        return mother_surname;
+    public String getDiagnostic() {
+        return diagnostic;
     }
 
-    public void setMother_surname(String mother_surname) {
-        this.mother_surname = mother_surname;
+    public void setDiagnostic(String diagnostic) {
+        this.diagnostic = diagnostic;
     }
 
-    public boolean isGender() {
-        return gender;
+    public float getWeight() {
+        return weight;
     }
 
-    public void setGender(boolean gender) {
-        this.gender = gender;
+    public void setWeight(float weight) {
+        this.weight = weight;
     }
 
-    public String getNo_imss() {
-        return no_imss;
+    public float getHeight() {
+        return height;
     }
 
-    public void setNo_imss(String no_imss) {
-        this.no_imss = no_imss;
+    public void setHeight(float height) {
+        this.height = height;
     }
 
-    public String getBarcode() {
-        return barcode;
+    public Personas_canalizadas getPersona_canalizada() {
+        return persona_canalizada;
     }
 
-    public void setBarcode(String barcode) {
-        this.barcode = barcode;
+    public void setPersona_canalizada(Personas_canalizadas persona_canalizada) {
+        this.persona_canalizada = persona_canalizada;
     }
 
     public boolean isStatus() {
