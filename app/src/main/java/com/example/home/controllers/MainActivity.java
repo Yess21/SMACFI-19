@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         linearLayoutMenu = (LinearLayout) findViewById(R.id.linearLayoutMenu);
         btnCerrarSesion = (Button) findViewById(R.id.btnCerrarSesion);
 
+        rol();
+
         btnCerrarSesion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -103,5 +105,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(IntPerfil);
             }
         });
+    }
+
+    private void rol() {
+        String role = Sesion.get(MainActivity.this).getSharedPreferences().getString(Sesion.PREF_USER_ROLE, "");
+        switch (role) {
+            case "Docente": {
+                ImgReportes.setEnabled(false);
+                ImgCanal.setEnabled(false);
+                ImgGel.setEnabled(false);
+                break;
+            }
+            case "Vigilante": {
+                ImgReportes.setEnabled(false);
+                ImgDiag.setEnabled(false);
+                break;
+            }
+            case "Doctor": {
+                ImgGel.setEnabled(false);
+                ImgCanal.setEnabled(false);
+                break;
+            }
+        }
     }
 }

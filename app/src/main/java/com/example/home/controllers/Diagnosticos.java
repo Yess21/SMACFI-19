@@ -81,7 +81,7 @@ public class Diagnosticos extends AppCompatActivity {
         diagnostico = new com.example.home.models.Diagnosticos();
     }
 
-    public void buscar() {
+    private void buscar() {
         if(validar()){
             String token = "Bearer " + Sesion.get(Diagnosticos.this).getSharedPreferences().getString(Sesion.PREF_USER_TOKEN, "Null");
             Call<com.example.home.models.Diagnosticos> call = RetrofitClient.getInstance().getDiagnosticos().getDiagnostico(token, matricula);
@@ -115,7 +115,7 @@ public class Diagnosticos extends AppCompatActivity {
         }
     }
 
-    public void llenarDatos() {
+    private void llenarDatos() {
         txtNombre.setText(diagnostico.getPersona_canalizada().getAlumno().getPersona().getName());
         txtGrupo.setText(diagnostico.getPersona_canalizada().getAlumno().getGroup());
         txtCarrera.setText(diagnostico.getPersona_canalizada().getAlumno().getEducational_program());
@@ -130,7 +130,7 @@ public class Diagnosticos extends AppCompatActivity {
         txtFecha.setText(String.valueOf(diagnostico.getCreated_at()));
     }
 
-    public boolean validar() {
+    private boolean validar() {
         matricula = txtMatricula.getText().toString().trim();
 
         if(matricula.isEmpty()) {
