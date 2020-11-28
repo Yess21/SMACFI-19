@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayoutMenu = (LinearLayout) findViewById(R.id.linearLayoutMenu);
         btnCerrarSesion = (Button) findViewById(R.id.btnCerrarSesion);
 
-        rol();
+        //rol();
 
         btnCerrarSesion.setOnClickListener(new View.OnClickListener(){
             @Override
