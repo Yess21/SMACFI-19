@@ -52,6 +52,8 @@ public class Diagnosticos extends AppCompatActivity {
         txtObservaciones = (TextView) findViewById(R.id.txtObservaciones);
         txtFecha = (TextView) findViewById(R.id.txtFecha);
 
+        btnActualizar.setEnabled(false);
+        btnEliminar.setEnabled(false);
 
         btnAgregar.setOnClickListener(new View.OnClickListener(){
             @Override

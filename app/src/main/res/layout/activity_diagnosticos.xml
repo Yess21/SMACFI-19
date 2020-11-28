@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/diagnosticos"
+                android:text="@string/historial"
                 android:textAlignment="center"
                 android:fontFamily="@font/blenda_script"
                 android:textColor="#4168C6"
@@ -51,9 +51,9 @@
                 android:layout_width="270dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="35dp"
-                android:background="#BEFFFFFF"
-                android:backgroundTint="#BEFFFFFF"
-                android:text="@string/matricula"
+                android:background="#BEFFFF"
+                android:backgroundTint="#BEFFFF"
+                android:hint="@string/matricula"
                 android:textAlignment="center" />
 
             <Button
